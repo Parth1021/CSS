@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="=UTF-8">
+    <title>Parth's Webpage</title>>
+</head>
+<style>
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+text-align:  center;
+  margin-bottom: 15px;
+}
+
+p {
+  border: 1px solid black;
+  background-color: lightskyblue;
+  width: 95%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  font-family:cursive;
+  color: darkslateblue;
+}
+#p1{
+    
+    font-family:cursive;
+    font-size: medium;
+}
+#p2{
+  font-family:sans-serif;  
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-right:30px;
+  border: 1px solid darkmagenta;
+  background-color: lightcyan;
+  width: 15%;
+  height: 30px;
+  color: lightseagreen;
+  float:right;
+  margin-right: 12px;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+   .col-lg-4{
+    float: left;
+    border: 1px ;/*-- to remove bordre line outside teh box */
+    width: 33.33333%; 
+             } 
+} 
+
+@media (min-width: 769px) and (max-width: 991px)  {
+   .col-md-6{
+    float: left;
+    border: 2px ;/*-- to remove bordre line outside teh box */
+    width: 50%;
+              }
+    .col{
+    	width:100%;
+    }
+  }
+
+
+@media (max-width: 768px)  {
+   .col-sm-12{
+    float: left;
+    border: 2px ;/*-- to remove bordre line outside teh box */
+    width: 100%;
+              }
+  }
+</style>
+<body style="background-color: lightseagreen;">
+    <h1 style="font-family: cursive;font-size:80px;">Our Menu</h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <p id="p2">chicken</p>
+            <p id="p1">ITEM 1Borders and Colors: Each section should have a background color set to some color (of your choosing). Set the background color of each section title region to some unique color (of your choosing)
+             </p>
+          </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <p id="p2">beef</p><p id="p1">Item 2 Wow this is cool
+        Borders and Colors: Each section should have a background color set to some color (of your choosing). Set the background color of each section title region to some unique color (of your choosing).</p>
+         </div>
+      
+        <div class="col-lg-4 col-md-6 col-sm-12 col">
+            <p id="p2">pork</p><p id="p1">Item 3 Borders and Colors: Each section should have a background color set to some color (of your choosing). Set the background color of each section title region to some unique color (of your choosing).</p>
+        </div>
+      
+       
+      </div>
+</body>
+</html>
